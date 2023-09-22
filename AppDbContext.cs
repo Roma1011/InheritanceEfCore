@@ -17,14 +17,21 @@ public class AppDbContext:DbContext
     public DbSet<FarmAnimal> FarmAnimals => Set<FarmAnimal>();
     public DbSet<Dog> DbSet => Set<Dog>();
     public DbSet<Cat> Cats => Set<Cat>();
+    public DbSet<Human> Humans => Set<Human>();
+    public DbSet<DnaSeqvence> DnaSeqvences => Set<DnaSeqvence>();
+
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Animal>();
+        /*modelBuilder.Entity<Animal>();
         modelBuilder.Entity<Pet>();
         modelBuilder.Entity<FarmAnimal>();
         modelBuilder.Entity<Dog>();
         modelBuilder.Entity<Cat>();
+        modelBuilder.Entity<Human>();
+        modelBuilder.Entity<DnaSeqvence>();
+        */
+
 
         base.OnModelCreating(modelBuilder);
     }

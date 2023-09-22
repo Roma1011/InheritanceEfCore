@@ -7,33 +7,36 @@ using (var context = new AppDbContext())
     context.Database.EnsureDeleted();
     context.Database.EnsureCreated();
 
+    var catDna = new DnaSeqvence { Bases = "MEWMEWMEW" };
+    var dogDna = new DnaSeqvence { Bases = "WOFWOFWOF" };
+    var SheepDna = new DnaSeqvence { Bases = "GAATAACAA" };
     context.AddRange(
         new Cat
         {
             Name = "Alice"
-            ,Species = "Felis catus"
-            ,Colorful = true
+            , Species = "Felis catus"
+            , Colorful = true
+            , Dna = catDna
         },
         new Cat
         {
             Name = "Tommy"
-            ,
-            Species = "Felis Tommius"
-            ,
-            Colorful = true
+            , Species = "Felis Tommius"
+            , Colorful = true
+            , Dna = catDna
         },
         new Dog
         {
             Name = "Cerberus"
-            ,
-            Species = "Felis Cerberus"
-            ,
-            FavoriteToy = "Cat"
+            , Species = "Felis Cerberus"
+            , FavoriteToy = "Cat"
+            , Dna = dogDna
         }, 
         new FarmAnimal
         {
-            Value=50.0m,
-            Species = "Felis Dogus"
+            Value=50.0m
+            , Species = "Felis Dogus"
+            , Dna = SheepDna
         });
 
     context.SaveChanges();
