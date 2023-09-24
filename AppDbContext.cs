@@ -15,7 +15,7 @@ public class AppDbContext:DbContext
     public DbSet<Animal> Animals => Set<Animal>();
     public DbSet<Pet>Pets=> Set<Pet>();
     public DbSet<FarmAnimal> FarmAnimals => Set<FarmAnimal>();
-    public DbSet<Dog> DbSet => Set<Dog>();
+    public DbSet<Dog> Dogs => Set<Dog>();
     public DbSet<Cat> Cats => Set<Cat>();
     public DbSet<Human> Humans => Set<Human>();
     public DbSet<DnaSeqvence> DnaSeqvences => Set<DnaSeqvence>();
@@ -23,6 +23,7 @@ public class AppDbContext:DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.Entity<Animal>().ToTable("Animals").UseTptMappingStrategy();
         /*modelBuilder.Entity<Animal>();
         modelBuilder.Entity<Pet>();
         modelBuilder.Entity<FarmAnimal>();
