@@ -2849,23 +2849,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\romsk\\.nuget\\packages\\": {},
+    "C:\\Users\\Student\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Dot.net\\InheritanceTPH-TPT-TPC\\InheritanceTPH-TPT-TPC\\InheritanceTPH-TPT-TPC.csproj",
+      "projectUniqueName": "D:\\Programing\\c# .NET\\InheritanceEfCore\\InheritanceTPH-TPT-TPC.csproj",
       "projectName": "InheritanceTPH-TPT-TPC",
-      "projectPath": "C:\\Dot.net\\InheritanceTPH-TPT-TPC\\InheritanceTPH-TPT-TPC\\InheritanceTPH-TPT-TPC.csproj",
-      "packagesPath": "C:\\Users\\romsk\\.nuget\\packages\\",
-      "outputPath": "C:\\Dot.net\\InheritanceTPH-TPT-TPC\\InheritanceTPH-TPT-TPC\\obj\\",
+      "projectPath": "D:\\Programing\\c# .NET\\InheritanceEfCore\\InheritanceTPH-TPT-TPC.csproj",
+      "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
+      "outputPath": "D:\\Programing\\c# .NET\\InheritanceEfCore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\romsk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Student\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2927,7 +2927,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

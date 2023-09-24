@@ -45,7 +45,7 @@ using (var context = new AppDbContext())
 using (var context=new AppDbContext())
 {
     var result1 = context.Animals.Where(a => a.Species.StartsWith("F")).ToList();
-    var result2 = context.Animals.Where(a => a.Species.StartsWith("F")).ToList();
-    var result3 = context.Animals.Where(a => a.Species.StartsWith("F")).ToList();
+    var result2 = context.Pets.Where(a => a.Species.StartsWith("F")).ToList();
+    var result3 = context.Cats.Where(a => a.Species.StartsWith("F")).ToList();
 }
 
